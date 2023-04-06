@@ -1,0 +1,3679 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="dist/tailwind_style.css" />
+    <link rel="stylesheet" href="dist/style_min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Gunjan</title>
+  </head>
+  <body>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {});
+
+      window.addEventListener("load", function () {
+        const lodderPage = document.getElementById("loader-page");
+        const Header_section = document.getElementById("header-section");
+        const Carousel_banner_section = document.getElementById(
+          "carousel-banner-section"
+        );
+        const ethinc_suits_section = document.getElementById("ethinc-suits-section");
+        const product_cart_section = document.getElementById("product-cart-section");
+        const new_arrival_section = document.getElementById("new-arrival-section");
+        const top_product_section = document.getElementById("top-product-section");
+        const trandy_collection_section = document.getElementById(
+          "trandy-collection-section"
+        );
+        const feel_ethentic_section = document.getElementById(
+          "feel-ethentic-section"
+        );
+        const service_details_section = document.getElementById(
+          "service-details-section"
+        );
+        const footer_section = document.getElementById("footer-section");
+
+        lodderPage.classList.add("hidden");
+        Header_section.classList.remove("hidden");
+        Carousel_banner_section.classList.remove("hidden");
+        ethinc_suits_section.classList.remove("hidden");
+        product_cart_section.classList.remove("hidden");
+        new_arrival_section.classList.remove("hidden");
+        top_product_section.classList.remove("hidden");
+        trandy_collection_section.classList.remove("hidden");
+        feel_ethentic_section.classList.remove("hidden");
+        service_details_section.classList.remove("hidden");
+        footer_section.classList.remove("hidden");
+      });
+    </script>
+    <!-- Not Load Full Page -->
+
+    <div class="lodder bg-white h-screen" id="loader-page">
+      <!-- Loading Animation Start -->
+      <div
+        class="flex justify-center items-center gap-4 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+      >
+        <span
+          class="w-1 h-14 bg-red-500 inline-block animate-Loading"
+          style="animation-delay: 0.2s"
+        ></span>
+        <span
+          class="w-1 h-14 bg-red-500 inline-block animate-Loading"
+          style="animation-delay: 0.4s"
+        ></span>
+        <span
+          class="w-1 h-14 bg-red-500 inline-block animate-Loading"
+          style="animation-delay: 0.6s"
+        ></span>
+        <span
+          class="w-1 h-14 bg-red-500 inline-block animate-Loading"
+          style="animation-delay: 0.8s"
+        ></span>
+      </div>
+      <!-- Loading Animation End -->
+    </div>
+
+    <!-- Header Secttion NavBar -->
+
+    <header class="bg-white hidden" id="header-section">
+      <div
+        class="container flex mx-auto py-4 px-24 justify-between items-center"
+      >
+        <div>
+          <img class="logo w-48" src="gunjan_image/logo.png" alt="" />
+        </div>
+        <div class="">
+          <ul class="flex gap-10 nav-list">
+            <li
+              class="hover:text-amber-600 cursor-pointer text-gray-500 text-md"
+            >
+              Home
+            </li>
+            <li
+              class="hover:text-amber-600 cursor-pointer text-gray-500 text-md"
+            >
+              About
+            </li>
+            <li class="nav-colaps group">
+              <span
+                class="group-hover:text-amber-600 cursor-pointer text-gray-500 text-md after:content-['\2B9F'] after:text-base"
+                >Page</span
+              >
+              <ul
+                class="nav-colaps-item absolute z-10 top-20 bg-white border-b-4 border-red-400 invisible opacity-0 group-hover:visible group-hover:opacity-100 transition-all delay-100 shadow-md shadow-gray-400 rounded-b-md"
+              >
+                <li
+                  class="px-8 py-3 cursor-pointer hover:bg-red-400 hover:text-white text-gray-600 border-b-2 border-gray-200"
+                >
+                  <a href="#">Trams & Condituon</a>
+                </li>
+                <li
+                  class="px-8 py-3 cursor-pointer hover:bg-red-400 hover:text-white text-gray-600 border-b-2 border-gray-200"
+                >
+                  <a href="#">Privacy & Policy</a>
+                </li>
+                <li
+                  class="px-8 py-3 cursor-pointer hover:bg-red-400 hover:text-white text-gray-600 border-b-2 border-gray-200 border-none"
+                >
+                  <a href="#">FAQ</a>
+                </li>
+              </ul>
+            </li>
+            <li class="group">
+              <span
+                class="group-hover:text-amber-600 cursor-pointer text-gray-500 text-md after:content-['\2B9F'] after:text-base"
+                >Product</span
+              >
+              <div
+                class="w-3/5 left-1/2 -translate-x-1/2 grid grid-cols-4 gap-2 nav-colaps-item absolute z-10 top-20 bg-white border-b-4 border-red-400 invisible opacity-0 group-hover:visible group-hover:opacity-100 transition-all delay-100 shadow-md shadow-gray-400 rounded-b-md pr-3"
+              >
+                <div class="flex gap-2 p-4 cursor-pointer">
+                  <div>
+                    <img class="w-20" src="Image/product_image1.jpg" alt="" />
+                  </div>
+                  <div>
+                    <h1
+                      class="py-2 text-base font-medium text-gray-500 hover:text-red-500"
+                    >
+                      Lorem ipsum amet.
+                    </h1>
+                    <div class="text-red-500 text-base">
+                      ₹4000.00
+                      <span class="line-through text-gray-400 text-sm"
+                        >₹4200.00</span
+                      >
+                    </div>
+                  </div>
+                </div>
+
+                <div class="flex gap-2 p-4 cursor-pointer">
+                  <div>
+                    <img class="w-20" src="Image/product_image1.jpg" alt="" />
+                  </div>
+                  <div>
+                    <h1
+                      class="py-2 text-base font-medium text-gray-500 hover:text-red-500"
+                    >
+                      Lorem ipsumamet.
+                    </h1>
+                    <div class="text-red-500 text-base">
+                      ₹4000.00
+                      <span class="line-through text-gray-400 text-sm"
+                        >₹4200.00</span
+                      >
+                    </div>
+                  </div>
+                </div>
+
+                <div class="flex gap-2 p-4 cursor-pointer">
+                  <div>
+                    <img class="w-20" src="Image/product_image2.jpg" alt="" />
+                  </div>
+                  <div>
+                    <h1
+                      class="py-2 text-base font-medium text-gray-500 hover:text-red-500"
+                    >
+                      Lorem ipsumamet.
+                    </h1>
+                    <div class="text-red-500 text-base">
+                      ₹4000.00
+                      <span class="line-through text-gray-400 text-sm"
+                        >₹4200.00</span
+                      >
+                    </div>
+                  </div>
+                </div>
+
+                <div class="flex gap-2 p-4 cursor-pointer">
+                  <div>
+                    <img class="w-20" src="Image/product_image3.jpg" alt="" />
+                  </div>
+                  <div>
+                    <h1
+                      class="py-2 text-base font-medium text-gray-500 hover:text-red-500"
+                    >
+                      Lorem ips amet.
+                    </h1>
+                    <div class="text-red-500 text-base">
+                      ₹4000.00
+                      <span class="line-through text-gray-400 text-sm"
+                        >₹4200.00</span
+                      >
+                    </div>
+                  </div>
+                </div>
+
+                <div class="flex gap-2 p-4 cursor-pointer">
+                  <div>
+                    <img class="w-20" src="Image/product_image4.jpg" alt="" />
+                  </div>
+                  <div>
+                    <h1
+                      class="py-2 text-base font-medium text-gray-500 hover:text-red-500"
+                    >
+                      Loremsum amet.
+                    </h1>
+                    <div class="text-red-500 text-base">
+                      ₹4000.00
+                      <span class="line-through text-gray-400 text-sm"
+                        >₹4200.00</span
+                      >
+                    </div>
+                  </div>
+                </div>
+
+                <div class="flex gap-2 p-4 cursor-pointer">
+                  <div>
+                    <img class="w-20" src="Image/product_image15.jpeg" alt="" />
+                  </div>
+                  <div>
+                    <h1
+                      class="py-2 text-base font-medium text-gray-500 hover:text-red-500"
+                    >
+                      Lorem ips amet.
+                    </h1>
+                    <div class="text-red-500 text-base">
+                      ₹4000.00
+                      <span class="line-through text-gray-400 text-sm"
+                        >₹4200.00</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li
+              class="hover:text-amber-600 cursor-pointer text-gray-500 text-md"
+            >
+              Contact
+            </li>
+          </ul>
+        </div>
+        <div class="flex gap-24 nav-activity">
+          <div class="nav-icon flex items-center gap-4">
+            <div class="h-4 cursor-pointer group">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-4 h-4 text-gray-500 text-md group-hover:text-red-500"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
+                />
+              </svg>
+            </div>
+            <div class="h-4 cursor-pointer group">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-4 h-4 text-gray-500 text-md group-hover:text-red-500"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M19.5 12c0-1.232-.046-2.453-.138-3.662a4.006 4.006 0 00-3.7-3.7 48.678 48.678 0 00-7.324 0 4.006 4.006 0 00-3.7 3.7c-.017.22-.032.441-.046.662M19.5 12l3-3m-3 3l-3-3m-12 3c0 1.232.046 2.453.138 3.662a4.006 4.006 0 003.7 3.7 48.656 48.656 0 007.324 0 4.006 4.006 0 003.7-3.7c.017-.22.032-.441.046-.662M4.5 12l3 3m-3-3l-3 3"
+                />
+              </svg>
+            </div>
+            <div class="h-4 cursor-pointer relative group">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-4 h-4 text-gray-500 text-md mr-6 group-hover:text-red-500"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"
+                />
+              </svg>
+              <span
+                class="w-6 h-6 rounded-full bg-red-500 block text-center absolute -top-4 right-0 text-white text-base"
+                >0</span
+              >
+            </div>
+            <div class="h-4 cursor-pointer relative group">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-4 h-4 text-gray-500 text-md mr-6 group-hover:text-red-500"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z"
+                />
+              </svg>
+              <span
+                class="w-6 h-6 rounded-full bg-red-500 block text-center absolute -top-4 right-0 text-white text-base"
+                >0</span
+              >
+              <div
+                class="group-hover:content-[''] group-hover:absolute group-hover:border-8 group-hover:border-t-transparent group-hover:border-r-transparent group-hover:border-l-transparent group-hover:border-b-slate-400 delay-100 group-hover:mr-6"
+              ></div>
+              <div
+                class="w-96 bg-gray-100 absolute z-10 top-8 right-0 p-6 shadow-md shadow-gray-400 opacity-0 invisible group-hover:opacity-100 group-hover:visible delay-100 border-b-4 border-red-400 rounded-b-md"
+              >
+                <div
+                  class="mx-4 flex justify-between items-center text-gray-600"
+                >
+                  <span>Sub Total</span>
+                  <span>₹0.00</span>
+                </div>
+                <div class="btn block m-4 cursor-pointer">Check Out</div>
+                <div
+                  class="btn block m-4 cursor-pointer border-red-400 bg-white text-red-400"
+                >
+                  view Cart
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="flex items-center gap-2 text-gray-700 text-md uppercase group"
+          >
+            <ul>
+              <li class="nav-colaps group">
+                <span
+                  class="group-hover:text-amber-600 cursor-pointer text-gray-500 text-md"
+                  >Account</span
+                >
+                <ul
+                  class="nav-colaps-item absolute z-10 top-20 bg-white border-b-4 border-red-400 invisible opacity-0 group-hover:visible group-hover:opacity-100 transition-all delay-100 shadow-md shadow-gray-400 rounded-b-md"
+                >
+                  <li
+                    class="px-8 py-3 cursor-pointer hover:bg-red-400 hover:text-white text-gray-600 border-b-2 border-gray-200"
+                  >
+                    <a href="#">Log IN</a>
+                  </li>
+                  <li
+                    class="px-8 py-3 cursor-pointer hover:bg-red-400 hover:text-white text-gray-600 border-b-2 border-gray-200 border-none"
+                  >
+                    <a href="#">Register</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-4 h-4 text-gray-500 text-md group-hover:text-red-500"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Carusol Section -->
+
+    <section class="relative hidden" id="carousel-banner-section">
+      <div class="owl-carousel owl-theme" id="carusol-banner">
+        <div
+          class="item carusol-item animate-ease-in delay-150 transition-all duration-200 w-screen"
+          style="height: 900px"
+        >
+          <div
+            class="relative bg-no-repeat bg-cover bg-center w-full"
+            style="
+              background-image: url(gunjan_image/carusol1.jpeg);
+              height: 100%;
+            "
+          >
+            <div
+              class="carusol-content w-2/5 absolute top-1/2 -translate-y-1/2 left-1/4 -translate-x-1/4 p-8 text-gray-500"
+              style="left: 15%"
+            >
+              <h2
+                class="text-5xl p-4 uppercase text-gray-800 font-semibold tracking-widest leading-tight"
+              >
+                subject 1 dolor sit amet consectetur adipisicing.
+              </h2>
+              <p class="text-xl p-4">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Voluptatem ratione modi fugiat corporis nihil asperiores
+                accusantium, consequuntur repellendus hic tempore?
+              </p>
+              <button class="m-4 btn">Open Modal</button>
+            </div>
+          </div>
+        </div>
+        <div
+          class="item carusol-item animate-ease-in delay-150 transition-all duration-200 w-screen"
+          style="height: 900px"
+        >
+          <div
+            class="relative bg-no-repeat bg-cover bg-center w-full"
+            style="
+              background-image: url(gunjan_image/carusol2.jpeg);
+              height: 100%;
+            "
+          >
+            <div
+              class="carusol-content w-2/5 absolute top-1/2 -translate-y-1/2 left-1/4 p-8 text-gray-500 -translate-x-1/4"
+              style="left: 15%"
+            >
+              <h2
+                class="text-5xl p-4 uppercase text-gray-800 font-semibold tracking-widest leading-tight"
+              >
+                Subject 2 Lorem ipsum dolor sit amet consectetur adipisicing.
+              </h2>
+              <p class="text-xl p-4">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Voluptatem ratione modi fugiat corporis nihil asperiores
+                accusantium, consequuntur repellendus hic tempore?
+              </p>
+              <button class="m-4 btn">Open Modal</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="absolute z-20 top-1/2 text-2xl text-gray-500 -translate-y-1/2 flex justify-between w-full"
+        id="carousel-banner-nav"
+      ></div>
+    </section>
+
+    <!-- Womens Ethnic Suits -->
+
+    <section class="w-full bg-gunjain-main hidden" id="ethinc-suits-section">
+      <div class="container mx-auto flex py-20 items-center">
+        <div class="suite-shop w-1/2">
+          <div class="text-red-500 text-3xl my-4">Womens Ethnic Suits</div>
+          <div class="my-4 text-6xl text-gray-600 font-semibold">
+            Stylish Kurtis
+          </div>
+          <div class="my-8 text-xl text-gray-500 pr-20">
+            Your quest for comfortable ethnic salwar suits ends with us at
+            Gunjan’s. The newest collection brings you numerous ethnic outfits
+            at affordable prices. Immerse yourself in the ultimate festivity
+            with your luminous traditional look. Ethnic wear that steals the
+            gaze!
+          </div>
+          <div class="btn bg-gray-800 border-2 border-gray-800 mt-4">
+            shop now
+          </div>
+        </div>
+        <div
+          class="suite-image w-1/2 relative after:w-80 after:h-80 after:bg-gunjain-main-500 after:content-[''] after:rounded-full after:absolute after:bottom-0 after:right-10"
+        >
+          <img class="z-10 relative" src="gunjan_image/imgae2.png" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Product With Cart -->
+
+    <section
+      class="container mx-auto my-20 flex items-start hidden"
+      id="product-cart-section"
+    >
+      <div class="cart w-3/4 grid grid-cols-3 gap-8 mr-12">
+        <!-- Working On FireFox Design -->
+        <div class="cart-item text-center relative group cursor-pointer">
+          <div class="px-2 py-4">
+            <img src="Image/product_image1.jpg" alt="" />
+          </div>
+          <div class="px-12 pt-2 text-lg text-gray-600 font-semibold">
+            Yellow Rayon Kurta palazzo Set
+          </div>
+          <div class="mx-6 py-2 text-red-500 border-b-2 border-gray-200">
+            ₹4000.00
+            <span class="line-through text-gray-400 text-sm">₹4200.00</span>
+          </div>
+          <div class="relative py-2">
+            <a href="#" class="text-center"
+              ><p
+                class="after:content-[''] after:w-10 after:absolute after:bottom-0 after:h-1 after:bg-gray-600 after:left-1/2 after:-translate-x-1/2 after:transition-all after:duration-500 after:rounded-lg hover:after:w-32 hover:after:bg-red-500 hover:text-red-500 text-gray-600 text-base"
+              >
+                Add To Cart
+              </p></a
+            >
+          </div>
+          <div
+            class="cart-icon absolute bottom-36 text-center w-full opacity-0 group-hover:animate-carticon group-hover:opacity-100"
+          >
+            <span class="full-rounded-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-4 h-4"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z"
+                />
+              </svg>
+            </span>
+            <span class="full-rounded-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-4 h-4"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"
+                />
+              </svg>
+            </span>
+            <span class="full-rounded-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-4 h-4"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M19.5 12c0-1.232-.046-2.453-.138-3.662a4.006 4.006 0 00-3.7-3.7 48.678 48.678 0 00-7.324 0 4.006 4.006 0 00-3.7 3.7c-.017.22-.032.441-.046.662M19.5 12l3-3m-3 3l-3-3m-12 3c0 1.232.046 2.453.138 3.662a4.006 4.006 0 003.7 3.7 48.656 48.656 0 007.324 0 4.006 4.006 0 003.7-3.7c.017-.22.032-.441.046-.662M4.5 12l3 3m-3-3l-3 3"
+                ></path>
+              </svg>
+            </span>
+            <span class="full-rounded-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-4 h-4"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z"
+                />
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+                />
+              </svg>
+            </span>
+          </div>
+          <div
+            class="absolute top-0 right-0 bg-gray-700 text-white px-4 py-2 rounded-tl-2xl rounded-br-2xl"
+          >
+            New
+          </div>
+        </div>
+
+        <div class="cart-item text-center relative group cursor-pointer">
+          <div class="px-2 py-4">
+            <img src="Image/product_image2.jpg" alt="" />
+          </div>
+          <div class="px-12 pt-2 text-lg text-gray-600 font-semibold">
+            Yellow Rayon Kurta palazzo Set
+          </div>
+          <div class="mx-6 py-2 text-red-500 border-b-2 border-gray-200">
+            ₹4000.00
+            <span class="line-through text-gray-400 text-sm">₹4200.00</span>
+          </div>
+          <div class="relative py-2">
+            <a href="#" class="text-center"
+              ><p
+                class="after:content-[''] after:w-10 after:absolute after:bottom-0 after:h-1 after:bg-gray-600 after:left-1/2 after:-translate-x-1/2 after:transition-all after:duration-500 after:rounded-lg hover:after:w-32 hover:after:bg-red-500 hover:text-red-500 text-gray-600 text-base"
+              >
+                Add To Cart
+              </p></a
+            >
+          </div>
+          <div
+            class="cart-icon absolute bottom-36 text-center w-full opacity-0 group-hover:animate-carticon group-hover:opacity-100"
+          >
+            <span class="full-rounded-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-4 h-4"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z"
+                />
+              </svg>
+            </span>
+            <span class="full-rounded-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-4 h-4"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"
+                />
+              </svg>
+            </span>
+            <span class="full-rounded-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-4 h-4"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M19.5 12c0-1.232-.046-2.453-.138-3.662a4.006 4.006 0 00-3.7-3.7 48.678 48.678 0 00-7.324 0 4.006 4.006 0 00-3.7 3.7c-.017.22-.032.441-.046.662M19.5 12l3-3m-3 3l-3-3m-12 3c0 1.232.046 2.453.138 3.662a4.006 4.006 0 003.7 3.7 48.656 48.656 0 007.324 0 4.006 4.006 0 003.7-3.7c.017-.22.032-.441.046-.662M4.5 12l3 3m-3-3l-3 3"
+                ></path>
+              </svg>
+            </span>
+            <span class="full-rounded-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-4 h-4"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z"
+                />
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+                />
+              </svg>
+            </span>
+          </div>
+          <div
+            class="absolute top-0 right-0 bg-gray-700 text-white px-4 py-2 rounded-tl-2xl rounded-br-2xl"
+          >
+            New
+          </div>
+        </div>
+
+        <div class="cart-item text-center relative group cursor-pointer">
+          <div class="px-2 py-4">
+            <img src="Image/product_image3.jpg" alt="" />
+          </div>
+          <div class="px-12 pt-2 text-lg text-gray-600 font-semibold">
+            Yellow Rayon Kurta palazzo Set
+          </div>
+          <div class="mx-6 py-2 text-red-500 border-b-2 border-gray-200">
+            ₹4000.00
+            <span class="line-through text-gray-400 text-sm">₹4200.00</span>
+          </div>
+          <div class="relative py-2">
+            <a href="#" class="text-center"
+              ><p
+                class="after:content-[''] after:w-10 after:absolute after:bottom-0 after:h-1 after:bg-gray-600 after:left-1/2 after:-translate-x-1/2 after:transition-all after:duration-500 after:rounded-lg hover:after:w-32 hover:after:bg-red-500 hover:text-red-500 text-gray-600 text-base"
+              >
+                Add To Cart
+              </p></a
+            >
+          </div>
+          <div
+            class="cart-icon absolute bottom-36 text-center w-full opacity-0 group-hover:animate-carticon group-hover:opacity-100"
+          >
+            <span class="full-rounded-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-4 h-4"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z"
+                />
+              </svg>
+            </span>
+            <span class="full-rounded-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-4 h-4"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"
+                />
+              </svg>
+            </span>
+            <span class="full-rounded-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-4 h-4"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M19.5 12c0-1.232-.046-2.453-.138-3.662a4.006 4.006 0 00-3.7-3.7 48.678 48.678 0 00-7.324 0 4.006 4.006 0 00-3.7 3.7c-.017.22-.032.441-.046.662M19.5 12l3-3m-3 3l-3-3m-12 3c0 1.232.046 2.453.138 3.662a4.006 4.006 0 003.7 3.7 48.656 48.656 0 007.324 0 4.006 4.006 0 003.7-3.7c.017-.22.032-.441.046-.662M4.5 12l3 3m-3-3l-3 3"
+                ></path>
+              </svg>
+            </span>
+            <span class="full-rounded-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-4 h-4"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z"
+                />
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+                />
+              </svg>
+            </span>
+          </div>
+          <div
+            class="absolute top-0 right-0 bg-gray-700 text-white px-4 py-2 rounded-tl-2xl rounded-br-2xl"
+          >
+            New
+          </div>
+        </div>
+
+        <div class="cart-item text-center relative group cursor-pointer">
+          <div class="px-2 py-4">
+            <img src="Image/product_image4.jpg" alt="" />
+          </div>
+          <div class="px-12 pt-2 text-lg text-gray-600 font-semibold">
+            Yellow Rayon Kurta palazzo Set
+          </div>
+          <div class="mx-6 py-2 text-red-500 border-b-2 border-gray-200">
+            ₹4000.00
+            <span class="line-through text-gray-400 text-sm">₹4200.00</span>
+          </div>
+          <div class="relative py-2">
+            <a href="#" class="text-center"
+              ><p
+                class="after:content-[''] after:w-10 after:absolute after:bottom-0 after:h-1 after:bg-gray-600 after:left-1/2 after:-translate-x-1/2 after:transition-all after:duration-500 after:rounded-lg hover:after:w-32 hover:after:bg-red-500 hover:text-red-500 text-gray-600 text-base"
+              >
+                Add To Cart
+              </p></a
+            >
+          </div>
+          <div
+            class="cart-icon absolute bottom-36 text-center w-full opacity-0 group-hover:animate-carticon group-hover:opacity-100"
+          >
+            <span class="full-rounded-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-4 h-4"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z"
+                />
+              </svg>
+            </span>
+            <span class="full-rounded-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-4 h-4"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"
+                />
+              </svg>
+            </span>
+            <span class="full-rounded-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-4 h-4"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M19.5 12c0-1.232-.046-2.453-.138-3.662a4.006 4.006 0 00-3.7-3.7 48.678 48.678 0 00-7.324 0 4.006 4.006 0 00-3.7 3.7c-.017.22-.032.441-.046.662M19.5 12l3-3m-3 3l-3-3m-12 3c0 1.232.046 2.453.138 3.662a4.006 4.006 0 003.7 3.7 48.656 48.656 0 007.324 0 4.006 4.006 0 003.7-3.7c.017-.22.032-.441.046-.662M4.5 12l3 3m-3-3l-3 3"
+                ></path>
+              </svg>
+            </span>
+            <span class="full-rounded-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-4 h-4"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z"
+                />
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+                />
+              </svg>
+            </span>
+          </div>
+          <div
+            class="absolute top-0 right-0 bg-gray-700 text-white px-4 py-2 rounded-tl-2xl rounded-br-2xl"
+          >
+            New
+          </div>
+        </div>
+
+        <div class="cart-item text-center relative group cursor-pointer">
+          <div class="px-2 py-4">
+            <img src="Image/product_image5.jfif" alt="" />
+          </div>
+          <div class="px-12 pt-2 text-lg text-gray-600 font-semibold">
+            Yellow Rayon Kurta palazzo Set
+          </div>
+          <div class="mx-6 py-2 text-red-500 border-b-2 border-gray-200">
+            ₹4000.00
+            <span class="line-through text-gray-400 text-sm">₹4200.00</span>
+          </div>
+          <div class="relative py-2">
+            <a href="#" class="text-center"
+              ><p
+                class="after:content-[''] after:w-10 after:absolute after:bottom-0 after:h-1 after:bg-gray-600 after:left-1/2 after:-translate-x-1/2 after:transition-all after:duration-500 after:rounded-lg hover:after:w-32 hover:after:bg-red-500 hover:text-red-500 text-gray-600 text-base"
+              >
+                Add To Cart
+              </p></a
+            >
+          </div>
+          <div
+            class="cart-icon absolute bottom-36 text-center w-full opacity-0 group-hover:animate-carticon group-hover:opacity-100"
+          >
+            <span class="full-rounded-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-4 h-4"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z"
+                />
+              </svg>
+            </span>
+            <span class="full-rounded-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-4 h-4"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"
+                />
+              </svg>
+            </span>
+            <span class="full-rounded-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-4 h-4"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M19.5 12c0-1.232-.046-2.453-.138-3.662a4.006 4.006 0 00-3.7-3.7 48.678 48.678 0 00-7.324 0 4.006 4.006 0 00-3.7 3.7c-.017.22-.032.441-.046.662M19.5 12l3-3m-3 3l-3-3m-12 3c0 1.232.046 2.453.138 3.662a4.006 4.006 0 003.7 3.7 48.656 48.656 0 007.324 0 4.006 4.006 0 003.7-3.7c.017-.22.032-.441.046-.662M4.5 12l3 3m-3-3l-3 3"
+                ></path>
+              </svg>
+            </span>
+            <span class="full-rounded-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-4 h-4"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z"
+                />
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+                />
+              </svg>
+            </span>
+          </div>
+          <div
+            class="absolute top-0 right-0 bg-gray-700 text-white px-4 py-2 rounded-tl-2xl rounded-br-2xl"
+          >
+            New
+          </div>
+        </div>
+
+        <div class="cart-item text-center relative group cursor-pointer">
+          <div class="px-2 py-4">
+            <img src="Image/product_image6.jpg" alt="" />
+          </div>
+          <div class="px-12 pt-2 text-lg text-gray-600 font-semibold">
+            Yellow Rayon Kurta palazzo Set
+          </div>
+          <div class="mx-6 py-2 text-red-500 border-b-2 border-gray-200">
+            ₹4000.00
+            <span class="line-through text-gray-400 text-sm">₹4200.00</span>
+          </div>
+          <div class="relative py-2">
+            <a href="#" class="text-center"
+              ><p
+                class="after:content-[''] after:w-10 after:absolute after:bottom-0 after:h-1 after:bg-gray-600 after:left-1/2 after:-translate-x-1/2 after:transition-all after:duration-500 after:rounded-lg hover:after:w-32 hover:after:bg-red-500 hover:text-red-500 text-gray-600 text-base"
+              >
+                Add To Cart
+              </p></a
+            >
+          </div>
+          <div
+            class="cart-icon absolute bottom-36 text-center w-full opacity-0 group-hover:animate-carticon group-hover:opacity-100"
+          >
+            <span class="full-rounded-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-4 h-4"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z"
+                />
+              </svg>
+            </span>
+            <span class="full-rounded-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-4 h-4"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"
+                />
+              </svg>
+            </span>
+            <span class="full-rounded-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-4 h-4"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M19.5 12c0-1.232-.046-2.453-.138-3.662a4.006 4.006 0 00-3.7-3.7 48.678 48.678 0 00-7.324 0 4.006 4.006 0 00-3.7 3.7c-.017.22-.032.441-.046.662M19.5 12l3-3m-3 3l-3-3m-12 3c0 1.232.046 2.453.138 3.662a4.006 4.006 0 003.7 3.7 48.656 48.656 0 007.324 0 4.006 4.006 0 003.7-3.7c.017-.22.032-.441.046-.662M4.5 12l3 3m-3-3l-3 3"
+                ></path>
+              </svg>
+            </span>
+            <span class="full-rounded-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-4 h-4"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z"
+                />
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+                />
+              </svg>
+            </span>
+          </div>
+          <div
+            class="absolute top-0 right-0 bg-gray-700 text-white px-4 py-2 rounded-tl-2xl rounded-br-2xl"
+          >
+            New
+          </div>
+        </div>
+      </div>
+
+      <div class="right-baner w-1/4">
+        <img src="Image/Side_image1.png" alt="" />
+      </div>
+    </section>
+
+    <!-- New Arrivals -->
+
+    <section
+      class="container mx-auto mt-24 mb-8 overflow-hidden hidden"
+      id="new-arrival-section"
+    >
+      <div class="flex justify-between items-center">
+        <h1 class="text-gray-600 text-4xl pt-4 pb-8">New Arrivals</h1>
+        <div class="flex gap-4" id="NewArrivals"></div>
+      </div>
+      <div
+        class="owl-carousel owl-theme flex flex-row overflow-auto -mb-5 pb-8"
+        id="ItemCarouselOne"
+      >
+        <div
+          class="item cart-item text-center relative group cursor-pointer w-96"
+        >
+          <div class="px-2 py-4">
+            <img src="Image/product_image7.jfif" alt="" />
+          </div>
+          <div class="px-12 pt-2 text-lg text-gray-600 font-semibold">
+            Yellow Rayon Kurta palazzo Set
+          </div>
+          <div class="mx-6 py-2 text-red-500 border-b-2 border-gray-200">
+            ₹4000.00
+            <span class="line-through text-gray-400 text-sm">₹4200.00</span>
+          </div>
+          <div class="relative py-2">
+            <a href="#" class="text-center"
+              ><p
+                class="after:content-[''] after:w-10 after:absolute after:bottom-0 after:h-1 after:bg-gray-600 after:left-1/2 after:-translate-x-1/2 after:transition-all after:duration-500 after:rounded-lg hover:after:w-32 hover:after:bg-red-500 hover:text-red-500 text-gray-600 text-base"
+              >
+                Add To Cart
+              </p></a
+            >
+          </div>
+          <div
+            class="cart-icon absolute bottom-36 text-center w-full opacity-0 group-hover:animate-carticon group-hover:opacity-100"
+          >
+            <span class="full-rounded-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-4 h-4"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z"
+                />
+              </svg>
+            </span>
+            <span class="full-rounded-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-4 h-4"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"
+                />
+              </svg>
+            </span>
+            <span class="full-rounded-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-4 h-4"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M19.5 12c0-1.232-.046-2.453-.138-3.662a4.006 4.006 0 00-3.7-3.7 48.678 48.678 0 00-7.324 0 4.006 4.006 0 00-3.7 3.7c-.017.22-.032.441-.046.662M19.5 12l3-3m-3 3l-3-3m-12 3c0 1.232.046 2.453.138 3.662a4.006 4.006 0 003.7 3.7 48.656 48.656 0 007.324 0 4.006 4.006 0 003.7-3.7c.017-.22.032-.441.046-.662M4.5 12l3 3m-3-3l-3 3"
+                ></path>
+              </svg>
+            </span>
+            <span class="full-rounded-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-4 h-4"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z"
+                />
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+                />
+              </svg>
+            </span>
+          </div>
+        </div>
+
+        <div
+          class="item cart-item text-center relative group cursor-pointer w-96"
+        >
+          <div class="px-2 py-4">
+            <img src="Image/product_image8.jfif" alt="" />
+          </div>
+          <div class="px-12 pt-2 text-lg text-gray-600 font-semibold">
+            Yellow Rayon Kurta palazzo Set
+          </div>
+          <div class="mx-6 py-2 text-red-500 border-b-2 border-gray-200">
+            ₹4000.00
+            <span class="line-through text-gray-400 text-sm">₹4200.00</span>
+          </div>
+          <div class="relative py-2">
+            <a href="#" class="text-center"
+              ><p
+                class="after:content-[''] after:w-10 after:absolute after:bottom-0 after:h-1 after:bg-gray-600 after:left-1/2 after:-translate-x-1/2 after:transition-all after:duration-500 after:rounded-lg hover:after:w-32 hover:after:bg-red-500 hover:text-red-500 text-gray-600 text-base"
+              >
+                Add To Cart
+              </p></a
+            >
+          </div>
+          <div
+            class="cart-icon absolute bottom-36 text-center w-full opacity-0 group-hover:animate-carticon group-hover:opacity-100"
+          >
+            <span class="full-rounded-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-4 h-4"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z"
+                />
+              </svg>
+            </span>
+            <span class="full-rounded-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-4 h-4"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"
+                />
+              </svg>
+            </span>
+            <span class="full-rounded-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-4 h-4"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M19.5 12c0-1.232-.046-2.453-.138-3.662a4.006 4.006 0 00-3.7-3.7 48.678 48.678 0 00-7.324 0 4.006 4.006 0 00-3.7 3.7c-.017.22-.032.441-.046.662M19.5 12l3-3m-3 3l-3-3m-12 3c0 1.232.046 2.453.138 3.662a4.006 4.006 0 003.7 3.7 48.656 48.656 0 007.324 0 4.006 4.006 0 003.7-3.7c.017-.22.032-.441.046-.662M4.5 12l3 3m-3-3l-3 3"
+                ></path>
+              </svg>
+            </span>
+            <span class="full-rounded-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-4 h-4"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z"
+                />
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+                />
+              </svg>
+            </span>
+          </div>
+        </div>
+
+        <div
+          class="item cart-item text-center relative group cursor-pointer w-96"
+        >
+          <div class="px-2 py-4">
+            <img src="Image/product_image9.jfif" alt="" />
+          </div>
+          <div class="px-12 pt-2 text-lg text-gray-600 font-semibold">
+            Yellow Rayon Kurta palazzo Set
+          </div>
+          <div class="mx-6 py-2 text-red-500 border-b-2 border-gray-200">
+            ₹4000.00
+            <span class="line-through text-gray-400 text-sm">₹4200.00</span>
+          </div>
+          <div class="relative py-2">
+            <a href="#" class="text-center"
+              ><p
+                class="after:content-[''] after:w-10 after:absolute after:bottom-0 after:h-1 after:bg-gray-600 after:left-1/2 after:-translate-x-1/2 after:transition-all after:duration-500 after:rounded-lg hover:after:w-32 hover:after:bg-red-500 hover:text-red-500 text-gray-600 text-base"
+              >
+                Add To Cart
+              </p></a
+            >
+          </div>
+          <div
+            class="cart-icon absolute bottom-36 text-center w-full opacity-0 group-hover:animate-carticon group-hover:opacity-100"
+          >
+            <span class="full-rounded-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-4 h-4"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z"
+                />
+              </svg>
+            </span>
+            <span class="full-rounded-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-4 h-4"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"
+                />
+              </svg>
+            </span>
+            <span class="full-rounded-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-4 h-4"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M19.5 12c0-1.232-.046-2.453-.138-3.662a4.006 4.006 0 00-3.7-3.7 48.678 48.678 0 00-7.324 0 4.006 4.006 0 00-3.7 3.7c-.017.22-.032.441-.046.662M19.5 12l3-3m-3 3l-3-3m-12 3c0 1.232.046 2.453.138 3.662a4.006 4.006 0 003.7 3.7 48.656 48.656 0 007.324 0 4.006 4.006 0 003.7-3.7c.017-.22.032-.441.046-.662M4.5 12l3 3m-3-3l-3 3"
+                ></path>
+              </svg>
+            </span>
+            <span class="full-rounded-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-4 h-4"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z"
+                />
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+                />
+              </svg>
+            </span>
+          </div>
+        </div>
+
+        <div
+          class="item cart-item text-center relative group cursor-pointer w-96"
+        >
+          <div class="px-2 py-4">
+            <img src="Image/product_image10.jfif" alt="" />
+          </div>
+          <div class="px-12 pt-2 text-lg text-gray-600 font-semibold">
+            Yellow Rayon Kurta palazzo Set
+          </div>
+          <div class="mx-6 py-2 text-red-500 border-b-2 border-gray-200">
+            ₹4000.00
+            <span class="line-through text-gray-400 text-sm">₹4200.00</span>
+          </div>
+          <div class="relative py-2">
+            <a href="#" class="text-center"
+              ><p
+                class="after:content-[''] after:w-10 after:absolute after:bottom-0 after:h-1 after:bg-gray-600 after:left-1/2 after:-translate-x-1/2 after:transition-all after:duration-500 after:rounded-lg hover:after:w-32 hover:after:bg-red-500 hover:text-red-500 text-gray-600 text-base"
+              >
+                Add To Cart
+              </p></a
+            >
+          </div>
+          <div
+            class="cart-icon absolute bottom-36 text-center w-full opacity-0 group-hover:animate-carticon group-hover:opacity-100"
+          >
+            <span class="full-rounded-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-4 h-4"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z"
+                />
+              </svg>
+            </span>
+            <span class="full-rounded-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-4 h-4"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"
+                />
+              </svg>
+            </span>
+            <span class="full-rounded-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-4 h-4"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M19.5 12c0-1.232-.046-2.453-.138-3.662a4.006 4.006 0 00-3.7-3.7 48.678 48.678 0 00-7.324 0 4.006 4.006 0 00-3.7 3.7c-.017.22-.032.441-.046.662M19.5 12l3-3m-3 3l-3-3m-12 3c0 1.232.046 2.453.138 3.662a4.006 4.006 0 003.7 3.7 48.656 48.656 0 007.324 0 4.006 4.006 0 003.7-3.7c.017-.22.032-.441.046-.662M4.5 12l3 3m-3-3l-3 3"
+                ></path>
+              </svg>
+            </span>
+            <span class="full-rounded-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-4 h-4"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z"
+                />
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+                />
+              </svg>
+            </span>
+          </div>
+        </div>
+
+        <div
+          class="item cart-item text-center relative group cursor-pointer w-96"
+        >
+          <div class="px-2 py-4">
+            <img src="Image/product_image11.jpeg" alt="" />
+          </div>
+          <div class="px-12 pt-2 text-lg text-gray-600 font-semibold">
+            Yellow Rayon Kurta palazzo Set
+          </div>
+          <div class="mx-6 py-2 text-red-500 border-b-2 border-gray-200">
+            ₹4000.00
+            <span class="line-through text-gray-400 text-sm">₹4200.00</span>
+          </div>
+          <div class="relative py-2">
+            <a href="#" class="text-center"
+              ><p
+                class="after:content-[''] after:w-10 after:absolute after:bottom-0 after:h-1 after:bg-gray-600 after:left-1/2 after:-translate-x-1/2 after:transition-all after:duration-500 after:rounded-lg hover:after:w-32 hover:after:bg-red-500 hover:text-red-500 text-gray-600 text-base"
+              >
+                Add To Cart
+              </p></a
+            >
+          </div>
+          <div
+            class="cart-icon absolute bottom-36 text-center w-full opacity-0 group-hover:animate-carticon group-hover:opacity-100"
+          >
+            <span class="full-rounded-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-4 h-4"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z"
+                />
+              </svg>
+            </span>
+            <span class="full-rounded-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-4 h-4"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"
+                />
+              </svg>
+            </span>
+            <span class="full-rounded-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-4 h-4"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M19.5 12c0-1.232-.046-2.453-.138-3.662a4.006 4.006 0 00-3.7-3.7 48.678 48.678 0 00-7.324 0 4.006 4.006 0 00-3.7 3.7c-.017.22-.032.441-.046.662M19.5 12l3-3m-3 3l-3-3m-12 3c0 1.232.046 2.453.138 3.662a4.006 4.006 0 003.7 3.7 48.656 48.656 0 007.324 0 4.006 4.006 0 003.7-3.7c.017-.22.032-.441.046-.662M4.5 12l3 3m-3-3l-3 3"
+                ></path>
+              </svg>
+            </span>
+            <span class="full-rounded-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-4 h-4"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z"
+                />
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+                />
+              </svg>
+            </span>
+          </div>
+        </div>
+
+        <div
+          class="item cart-item text-center relative group cursor-pointer w-96"
+        >
+          <div class="px-2 py-4">
+            <img src="Image/product_image12.jpeg" alt="" />
+          </div>
+          <div class="px-12 pt-2 text-lg text-gray-600 font-semibold">
+            Yellow Rayon Kurta palazzo Set
+          </div>
+          <div class="mx-6 py-2 text-red-500 border-b-2 border-gray-200">
+            ₹4000.00
+            <span class="line-through text-gray-400 text-sm">₹4200.00</span>
+          </div>
+          <div class="relative py-2">
+            <a href="#" class="text-center"
+              ><p
+                class="after:content-[''] after:w-10 after:absolute after:bottom-0 after:h-1 after:bg-gray-600 after:left-1/2 after:-translate-x-1/2 after:transition-all after:duration-500 after:rounded-lg hover:after:w-32 hover:after:bg-red-500 hover:text-red-500 text-gray-600 text-base"
+              >
+                Add To Cart
+              </p></a
+            >
+          </div>
+          <div
+            class="cart-icon absolute bottom-36 text-center w-full opacity-0 group-hover:animate-carticon group-hover:opacity-100"
+          >
+            <span class="full-rounded-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-4 h-4"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z"
+                />
+              </svg>
+            </span>
+            <span class="full-rounded-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-4 h-4"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"
+                />
+              </svg>
+            </span>
+            <span class="full-rounded-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-4 h-4"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M19.5 12c0-1.232-.046-2.453-.138-3.662a4.006 4.006 0 00-3.7-3.7 48.678 48.678 0 00-7.324 0 4.006 4.006 0 00-3.7 3.7c-.017.22-.032.441-.046.662M19.5 12l3-3m-3 3l-3-3m-12 3c0 1.232.046 2.453.138 3.662a4.006 4.006 0 003.7 3.7 48.656 48.656 0 007.324 0 4.006 4.006 0 003.7-3.7c.017-.22.032-.441.046-.662M4.5 12l3 3m-3-3l-3 3"
+                ></path>
+              </svg>
+            </span>
+            <span class="full-rounded-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-4 h-4"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z"
+                />
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+                />
+              </svg>
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Top Products -->
+
+    <section class="container mx-auto my-40 hidden" id="top-product-section" id="topproductsec">
+      <div class="w-1/3 mx-auto relative">
+        <h1
+          class="text-center text-gray-600 uppercase text-5xl font-medium py-4"
+        >
+          Top Product
+        </h1>
+        <p class="text-center text-gray-400 px-8 mb-10">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos
+          expedita dolore pariatur totam quaerat voluptas repellendus rem ex quo
+          eos.
+        </p>
+
+        <!-- Loading Animation Start -->
+        <div
+          class="flex justify-center items-center gap-4 absolute bottom-1/4 left-1/2 -translate-x-1/2 hidden" id="TopProductLoad"
+        >
+          <span
+            class="w-3 h-3 rounded-full bg-red-500 inline-block animate-Loading"
+            style="animation-delay: 0.2s"
+          ></span>
+          <span
+            class="w-3 h-3 rounded-full bg-red-500 inline-block animate-Loading"
+            style="animation-delay: 0.4s"
+          ></span>
+          <span
+            class="w-3 h-3 rounded-full bg-red-500 inline-block animate-Loading"
+            style="animation-delay: 0.6s"
+          ></span>
+          <span
+            class="w-3 h-3 rounded-full bg-red-500 inline-block animate-Loading"
+            style="animation-delay: 0.8s"
+          ></span>
+        </div>
+        <!-- Loading Animation End -->
+
+        <div class="text-center">
+          <a href="#topproductsec" onclick="TopProductClick(0)"
+            ><button class="TopProductBtn text-btn text-red-400">Featured</button></a
+          >
+          <a href="#topproductsec" onclick="TopProductClick(1)" 
+            ><button class="TopProductBtn text-btn text-red-400">Top selling</button></a
+          >
+          <a href="#topproductsec" onclick="TopProductClick(2)" ><button class="TopProductBtn text-btn text-red-400">New</button></a>
+        </div>
+      </div>
+
+      <!-- Top Product Cart Item Start -->
+
+      <div class="TopProductCart grid grid-cols-4 gap-4 my-8 mb-12" id="FeaturedProduct" >
+        <!-- Top Product Cart Item-1 Start -->
+
+        <div class="TopFeatured cart-item text-center relative group cursor-pointer hidden">
+          <div class="px-2 py-4">
+            <img src="Image/product_image13.jpeg" alt="" />
+          </div>
+          <div class="px-12 pt-2 text-lg text-gray-600 font-semibold">
+            Yellow Rayon Kurta palazzo Set
+          </div>
+          <div class="mx-6 py-2 text-red-500 border-b-2 border-gray-200">
+            ₹4000.00
+            <span class="line-through text-gray-400 text-sm">₹4200.00</span>
+          </div>
+          <div class="relative py-2">
+            <a href="#" class="text-center"
+              ><p
+                class="after:content-[''] after:w-10 after:absolute after:bottom-0 after:h-1 after:bg-gray-600 after:left-1/2 after:-translate-x-1/2 after:transition-all after:duration-500 after:rounded-lg hover:after:w-32 hover:after:bg-red-500 hover:text-red-500 text-gray-600 text-base"
+              >
+                Add To Cart
+              </p></a
+            >
+          </div>
+          <div
+            class="cart-icon absolute bottom-36 text-center w-full opacity-0 group-hover:animate-carticon group-hover:opacity-100"
+          >
+            <span class="full-rounded-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-4 h-4"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z"
+                />
+              </svg>
+            </span>
+            <span class="full-rounded-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-4 h-4"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"
+                />
+              </svg>
+            </span>
+            <span class="full-rounded-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-4 h-4"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M19.5 12c0-1.232-.046-2.453-.138-3.662a4.006 4.006 0 00-3.7-3.7 48.678 48.678 0 00-7.324 0 4.006 4.006 0 00-3.7 3.7c-.017.22-.032.441-.046.662M19.5 12l3-3m-3 3l-3-3m-12 3c0 1.232.046 2.453.138 3.662a4.006 4.006 0 003.7 3.7 48.656 48.656 0 007.324 0 4.006 4.006 0 003.7-3.7c.017-.22.032-.441.046-.662M4.5 12l3 3m-3-3l-3 3"
+                ></path>
+              </svg>
+            </span>
+            <span class="full-rounded-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-4 h-4"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z"
+                />
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+                />
+              </svg>
+            </span>
+          </div>
+        </div>
+
+        <!-- Top Product Cart Item-1 End -->
+
+        <div class="TopFeatured TopSelling TopNew cart-item text-center relative group cursor-pointer hidden">
+          <div class="px-2 py-4">
+            <img src="Image/product_image14.jpeg" alt="" />
+          </div>
+          <div class="px-12 pt-2 text-lg text-gray-600 font-semibold">
+            Yellow Rayon Kurta palazzo Set
+          </div>
+          <div class="mx-6 py-2 text-red-500 border-b-2 border-gray-200">
+            ₹4000.00
+            <span class="line-through text-gray-400 text-sm">₹4200.00</span>
+          </div>
+          <div class="relative py-2">
+            <a href="#" class="text-center"
+              ><p
+                class="after:content-[''] after:w-10 after:absolute after:bottom-0 after:h-1 after:bg-gray-600 after:left-1/2 after:-translate-x-1/2 after:transition-all after:duration-500 after:rounded-lg hover:after:w-32 hover:after:bg-red-500 hover:text-red-500 text-gray-600 text-base"
+              >
+                Add To Cart
+              </p></a
+            >
+          </div>
+          <div
+            class="cart-icon absolute bottom-36 text-center w-full opacity-0 group-hover:animate-carticon group-hover:opacity-100"
+          >
+            <span class="full-rounded-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-4 h-4"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z"
+                />
+              </svg>
+            </span>
+            <span class="full-rounded-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-4 h-4"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"
+                />
+              </svg>
+            </span>
+            <span class="full-rounded-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-4 h-4"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M19.5 12c0-1.232-.046-2.453-.138-3.662a4.006 4.006 0 00-3.7-3.7 48.678 48.678 0 00-7.324 0 4.006 4.006 0 00-3.7 3.7c-.017.22-.032.441-.046.662M19.5 12l3-3m-3 3l-3-3m-12 3c0 1.232.046 2.453.138 3.662a4.006 4.006 0 003.7 3.7 48.656 48.656 0 007.324 0 4.006 4.006 0 003.7-3.7c.017-.22.032-.441.046-.662M4.5 12l3 3m-3-3l-3 3"
+                ></path>
+              </svg>
+            </span>
+            <span class="full-rounded-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-4 h-4"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z"
+                />
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+                />
+              </svg>
+            </span>
+          </div>
+        </div>
+
+        <div class="TopFeatured cart-item text-center relative group cursor-pointer hidden">
+          <div class="px-2 py-4">
+            <img src="Image/product_image15.jpeg" alt="" />
+          </div>
+          <div class="px-12 pt-2 text-lg text-gray-600 font-semibold">
+            Yellow Rayon Kurta palazzo Set
+          </div>
+          <div class="mx-6 py-2 text-red-500 border-b-2 border-gray-200">
+            ₹4000.00
+            <span class="line-through text-gray-400 text-sm">₹4200.00</span>
+          </div>
+          <div class="relative py-2">
+            <a href="#" class="text-center"
+              ><p
+                class="after:content-[''] after:w-10 after:absolute after:bottom-0 after:h-1 after:bg-gray-600 after:left-1/2 after:-translate-x-1/2 after:transition-all after:duration-500 after:rounded-lg hover:after:w-32 hover:after:bg-red-500 hover:text-red-500 text-gray-600 text-base"
+              >
+                Add To Cart
+              </p></a
+            >
+          </div>
+          <div
+            class="cart-icon absolute bottom-36 text-center w-full opacity-0 group-hover:animate-carticon group-hover:opacity-100"
+          >
+            <span class="full-rounded-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-4 h-4"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z"
+                />
+              </svg>
+            </span>
+            <span class="full-rounded-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-4 h-4"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"
+                />
+              </svg>
+            </span>
+            <span class="full-rounded-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-4 h-4"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M19.5 12c0-1.232-.046-2.453-.138-3.662a4.006 4.006 0 00-3.7-3.7 48.678 48.678 0 00-7.324 0 4.006 4.006 0 00-3.7 3.7c-.017.22-.032.441-.046.662M19.5 12l3-3m-3 3l-3-3m-12 3c0 1.232.046 2.453.138 3.662a4.006 4.006 0 003.7 3.7 48.656 48.656 0 007.324 0 4.006 4.006 0 003.7-3.7c.017-.22.032-.441.046-.662M4.5 12l3 3m-3-3l-3 3"
+                ></path>
+              </svg>
+            </span>
+            <span class="full-rounded-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-4 h-4"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z"
+                />
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+                />
+              </svg>
+            </span>
+          </div>
+        </div>
+
+        <div class="TopSelling TopNew cart-item text-center relative group cursor-pointer hidden">
+          <div class="px-2 py-4">
+            <img src="Image/product_image16.jpeg" alt="" />
+          </div>
+          <div class="px-12 pt-2 text-lg text-gray-600 font-semibold">
+            Yellow Rayon Kurta palazzo Set
+          </div>
+          <div class="mx-6 py-2 text-red-500 border-b-2 border-gray-200">
+            ₹4000.00
+            <span class="line-through text-gray-400 text-sm">₹4200.00</span>
+          </div>
+          <div class="relative py-2">
+            <a href="#" class="text-center"
+              ><p
+                class="after:content-[''] after:w-10 after:absolute after:bottom-0 after:h-1 after:bg-gray-600 after:left-1/2 after:-translate-x-1/2 after:transition-all after:duration-500 after:rounded-lg hover:after:w-32 hover:after:bg-red-500 hover:text-red-500 text-gray-600 text-base"
+              >
+                Add To Cart
+              </p></a
+            >
+          </div>
+          <div
+            class="cart-icon absolute bottom-36 text-center w-full opacity-0 group-hover:animate-carticon group-hover:opacity-100"
+          >
+            <span class="full-rounded-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-4 h-4"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z"
+                />
+              </svg>
+            </span>
+            <span class="full-rounded-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-4 h-4"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"
+                />
+              </svg>
+            </span>
+            <span class="full-rounded-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-4 h-4"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M19.5 12c0-1.232-.046-2.453-.138-3.662a4.006 4.006 0 00-3.7-3.7 48.678 48.678 0 00-7.324 0 4.006 4.006 0 00-3.7 3.7c-.017.22-.032.441-.046.662M19.5 12l3-3m-3 3l-3-3m-12 3c0 1.232.046 2.453.138 3.662a4.006 4.006 0 003.7 3.7 48.656 48.656 0 007.324 0 4.006 4.006 0 003.7-3.7c.017-.22.032-.441.046-.662M4.5 12l3 3m-3-3l-3 3"
+                ></path>
+              </svg>
+            </span>
+            <span class="full-rounded-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-4 h-4"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z"
+                />
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+                />
+              </svg>
+            </span>
+          </div>
+        </div>
+
+        <div class="TopNew cart-item text-center relative group cursor-pointer hidden">
+          <div class="px-2 py-4">
+            <img src="Image/product_image17.jpeg" alt="" />
+          </div>
+          <div class="px-12 pt-2 text-lg text-gray-600 font-semibold">
+            Yellow Rayon Kurta palazzo Set
+          </div>
+          <div class="mx-6 py-2 text-red-500 border-b-2 border-gray-200">
+            ₹4000.00
+            <span class="line-through text-gray-400 text-sm">₹4200.00</span>
+          </div>
+          <div class="relative py-2">
+            <a href="#" class="text-center"
+              ><p
+                class="after:content-[''] after:w-10 after:absolute after:bottom-0 after:h-1 after:bg-gray-600 after:left-1/2 after:-translate-x-1/2 after:transition-all after:duration-500 after:rounded-lg hover:after:w-32 hover:after:bg-red-500 hover:text-red-500 text-gray-600 text-base"
+              >
+                Add To Cart
+              </p></a
+            >
+          </div>
+          <div
+            class="cart-icon absolute bottom-36 text-center w-full opacity-0 group-hover:animate-carticon group-hover:opacity-100"
+          >
+            <span class="full-rounded-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-4 h-4"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z"
+                />
+              </svg>
+            </span>
+            <span class="full-rounded-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-4 h-4"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"
+                />
+              </svg>
+            </span>
+            <span class="full-rounded-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-4 h-4"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M19.5 12c0-1.232-.046-2.453-.138-3.662a4.006 4.006 0 00-3.7-3.7 48.678 48.678 0 00-7.324 0 4.006 4.006 0 00-3.7 3.7c-.017.22-.032.441-.046.662M19.5 12l3-3m-3 3l-3-3m-12 3c0 1.232.046 2.453.138 3.662a4.006 4.006 0 003.7 3.7 48.656 48.656 0 007.324 0 4.006 4.006 0 003.7-3.7c.017-.22.032-.441.046-.662M4.5 12l3 3m-3-3l-3 3"
+                ></path>
+              </svg>
+            </span>
+            <span class="full-rounded-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-4 h-4"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z"
+                />
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+                />
+              </svg>
+            </span>
+          </div>
+        </div>
+
+        <div class="TopFeatured cart-item text-center relative group cursor-pointer hidden">
+          <div class="px-2 py-4">
+            <img src="Image/product_image1.jpg" alt="" />
+          </div>
+          <div class="px-12 pt-2 text-lg text-gray-600 font-semibold">
+            Yellow Rayon Kurta palazzo Set
+          </div>
+          <div class="mx-6 py-2 text-red-500 border-b-2 border-gray-200">
+            ₹4000.00
+            <span class="line-through text-gray-400 text-sm">₹4200.00</span>
+          </div>
+          <div class="relative py-2">
+            <a href="#" class="text-center"
+              ><p
+                class="after:content-[''] after:w-10 after:absolute after:bottom-0 after:h-1 after:bg-gray-600 after:left-1/2 after:-translate-x-1/2 after:transition-all after:duration-500 after:rounded-lg hover:after:w-32 hover:after:bg-red-500 hover:text-red-500 text-gray-600 text-base"
+              >
+                Add To Cart
+              </p></a
+            >
+          </div>
+          <div
+            class="cart-icon absolute bottom-36 text-center w-full opacity-0 group-hover:animate-carticon group-hover:opacity-100"
+          >
+            <span class="full-rounded-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-4 h-4"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z"
+                />
+              </svg>
+            </span>
+            <span class="full-rounded-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-4 h-4"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"
+                />
+              </svg>
+            </span>
+            <span class="full-rounded-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-4 h-4"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M19.5 12c0-1.232-.046-2.453-.138-3.662a4.006 4.006 0 00-3.7-3.7 48.678 48.678 0 00-7.324 0 4.006 4.006 0 00-3.7 3.7c-.017.22-.032.441-.046.662M19.5 12l3-3m-3 3l-3-3m-12 3c0 1.232.046 2.453.138 3.662a4.006 4.006 0 003.7 3.7 48.656 48.656 0 007.324 0 4.006 4.006 0 003.7-3.7c.017-.22.032-.441.046-.662M4.5 12l3 3m-3-3l-3 3"
+                ></path>
+              </svg>
+            </span>
+            <span class="full-rounded-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-4 h-4"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z"
+                />
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+                />
+              </svg>
+            </span>
+          </div>
+        </div>
+
+        <div class="TopFeatured cart-item text-center relative group cursor-pointer hidden">
+          <div class="px-2 py-4">
+            <img src="Image/product_image2.jpg" alt="" />
+          </div>
+          <div class="px-12 pt-2 text-lg text-gray-600 font-semibold">
+            Yellow Rayon Kurta palazzo Set
+          </div>
+          <div class="mx-6 py-2 text-red-500 border-b-2 border-gray-200">
+            ₹4000.00
+            <span class="line-through text-gray-400 text-sm">₹4200.00</span>
+          </div>
+          <div class="relative py-2">
+            <a href="#" class="text-center"
+              ><p
+                class="after:content-[''] after:w-10 after:absolute after:bottom-0 after:h-1 after:bg-gray-600 after:left-1/2 after:-translate-x-1/2 after:transition-all after:duration-500 after:rounded-lg hover:after:w-32 hover:after:bg-red-500 hover:text-red-500 text-gray-600 text-base"
+              >
+                Add To Cart
+              </p></a
+            >
+          </div>
+          <div
+            class="cart-icon absolute bottom-36 text-center w-full opacity-0 group-hover:animate-carticon group-hover:opacity-100"
+          >
+            <span class="full-rounded-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-4 h-4"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z"
+                />
+              </svg>
+            </span>
+            <span class="full-rounded-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-4 h-4"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"
+                />
+              </svg>
+            </span>
+            <span class="full-rounded-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-4 h-4"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M19.5 12c0-1.232-.046-2.453-.138-3.662a4.006 4.006 0 00-3.7-3.7 48.678 48.678 0 00-7.324 0 4.006 4.006 0 00-3.7 3.7c-.017.22-.032.441-.046.662M19.5 12l3-3m-3 3l-3-3m-12 3c0 1.232.046 2.453.138 3.662a4.006 4.006 0 003.7 3.7 48.656 48.656 0 007.324 0 4.006 4.006 0 003.7-3.7c.017-.22.032-.441.046-.662M4.5 12l3 3m-3-3l-3 3"
+                ></path>
+              </svg>
+            </span>
+            <span class="full-rounded-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-4 h-4"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z"
+                />
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+                />
+              </svg>
+            </span>
+          </div>
+        </div>
+
+        <div class="TopSelling cart-item text-center relative group cursor-pointer hidden">
+          <div class="px-2 py-4">
+            <img src="Image/product_image3.jpg" alt="" />
+          </div>
+          <div class="px-12 pt-2 text-lg text-gray-600 font-semibold">
+            Yellow Rayon Kurta palazzo Set
+          </div>
+          <div class="mx-6 py-2 text-red-500 border-b-2 border-gray-200">
+            ₹4000.00
+            <span class="line-through text-gray-400 text-sm">₹4200.00</span>
+          </div>
+          <div class="relative py-2">
+            <a href="#" class="text-center"
+              ><p
+                class="after:content-[''] after:w-10 after:absolute after:bottom-0 after:h-1 after:bg-gray-600 after:left-1/2 after:-translate-x-1/2 after:transition-all after:duration-500 after:rounded-lg hover:after:w-32 hover:after:bg-red-500 hover:text-red-500 text-gray-600 text-base"
+              >
+                Add To Cart
+              </p></a
+            >
+          </div>
+          <div
+            class="cart-icon absolute bottom-36 text-center w-full opacity-0 group-hover:animate-carticon group-hover:opacity-100"
+          >
+            <span class="full-rounded-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-4 h-4"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z"
+                />
+              </svg>
+            </span>
+            <span class="full-rounded-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-4 h-4"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"
+                />
+              </svg>
+            </span>
+            <span class="full-rounded-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-4 h-4"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M19.5 12c0-1.232-.046-2.453-.138-3.662a4.006 4.006 0 00-3.7-3.7 48.678 48.678 0 00-7.324 0 4.006 4.006 0 00-3.7 3.7c-.017.22-.032.441-.046.662M19.5 12l3-3m-3 3l-3-3m-12 3c0 1.232.046 2.453.138 3.662a4.006 4.006 0 003.7 3.7 48.656 48.656 0 007.324 0 4.006 4.006 0 003.7-3.7c.017-.22.032-.441.046-.662M4.5 12l3 3m-3-3l-3 3"
+                ></path>
+              </svg>
+            </span>
+            <span class="full-rounded-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-4 h-4"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z"
+                />
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+                />
+              </svg>
+            </span>
+          </div>
+        </div>
+
+        <div class="TopSelling cart-item text-center relative group cursor-pointer hidden">
+          <div class="px-2 py-4">
+            <img src="Image/product_image5.jfif" alt="" />
+          </div>
+          <div class="px-12 pt-2 text-lg text-gray-600 font-semibold">
+            Yellow Rayon Kurta palazzo Set
+          </div>
+          <div class="mx-6 py-2 text-red-500 border-b-2 border-gray-200">
+            ₹4000.00
+            <span class="line-through text-gray-400 text-sm">₹4200.00</span>
+          </div>
+          <div class="relative py-2">
+            <a href="#" class="text-center"
+              ><p
+                class="after:content-[''] after:w-10 after:absolute after:bottom-0 after:h-1 after:bg-gray-600 after:left-1/2 after:-translate-x-1/2 after:transition-all after:duration-500 after:rounded-lg hover:after:w-32 hover:after:bg-red-500 hover:text-red-500 text-gray-600 text-base"
+              >
+                Add To Cart
+              </p></a
+            >
+          </div>
+          <div
+            class="cart-icon absolute bottom-36 text-center w-full opacity-0 group-hover:animate-carticon group-hover:opacity-100"
+          >
+            <span class="full-rounded-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-4 h-4"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z"
+                />
+              </svg>
+            </span>
+            <span class="full-rounded-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-4 h-4"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"
+                />
+              </svg>
+            </span>
+            <span class="full-rounded-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-4 h-4"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M19.5 12c0-1.232-.046-2.453-.138-3.662a4.006 4.006 0 00-3.7-3.7 48.678 48.678 0 00-7.324 0 4.006 4.006 0 00-3.7 3.7c-.017.22-.032.441-.046.662M19.5 12l3-3m-3 3l-3-3m-12 3c0 1.232.046 2.453.138 3.662a4.006 4.006 0 003.7 3.7 48.656 48.656 0 007.324 0 4.006 4.006 0 003.7-3.7c.017-.22.032-.441.046-.662M4.5 12l3 3m-3-3l-3 3"
+                ></path>
+              </svg>
+            </span>
+            <span class="full-rounded-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-4 h-4"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z"
+                />
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+                />
+              </svg>
+            </span>
+          </div>
+        </div>
+
+        <div class="TopNew cart-item text-center relative group cursor-pointer hidden">
+          <div class="px-2 py-4">
+            <img src="Image/product_image6.jpg" alt="" />
+          </div>
+          <div class="px-12 pt-2 text-lg text-gray-600 font-semibold">
+            Yellow Rayon Kurta palazzo Set
+          </div>
+          <div class="mx-6 py-2 text-red-500 border-b-2 border-gray-200">
+            ₹4000.00
+            <span class="line-through text-gray-400 text-sm">₹4200.00</span>
+          </div>
+          <div class="relative py-2">
+            <a href="#" class="text-center"
+              ><p
+                class="after:content-[''] after:w-10 after:absolute after:bottom-0 after:h-1 after:bg-gray-600 after:left-1/2 after:-translate-x-1/2 after:transition-all after:duration-500 after:rounded-lg hover:after:w-32 hover:after:bg-red-500 hover:text-red-500 text-gray-600 text-base"
+              >
+                Add To Cart
+              </p></a
+            >
+          </div>
+          <div
+            class="cart-icon absolute bottom-36 text-center w-full opacity-0 group-hover:animate-carticon group-hover:opacity-100"
+          >
+            <span class="full-rounded-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-4 h-4"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z"
+                />
+              </svg>
+            </span>
+            <span class="full-rounded-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-4 h-4"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"
+                />
+              </svg>
+            </span>
+            <span class="full-rounded-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-4 h-4"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M19.5 12c0-1.232-.046-2.453-.138-3.662a4.006 4.006 0 00-3.7-3.7 48.678 48.678 0 00-7.324 0 4.006 4.006 0 00-3.7 3.7c-.017.22-.032.441-.046.662M19.5 12l3-3m-3 3l-3-3m-12 3c0 1.232.046 2.453.138 3.662a4.006 4.006 0 003.7 3.7 48.656 48.656 0 007.324 0 4.006 4.006 0 003.7-3.7c.017-.22.032-.441.046-.662M4.5 12l3 3m-3-3l-3 3"
+                ></path>
+              </svg>
+            </span>
+            <span class="full-rounded-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-4 h-4"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z"
+                />
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+                />
+              </svg>
+            </span>
+          </div>
+        </div>
+
+        <div class="TopSelling TopNew cart-item text-center relative group cursor-pointer hidden">
+          <div class="px-2 py-4">
+            <img src="Image/product_image7.jfif" alt="" />
+          </div>
+          <div class="px-12 pt-2 text-lg text-gray-600 font-semibold">
+            Yellow Rayon Kurta palazzo Set
+          </div>
+          <div class="mx-6 py-2 text-red-500 border-b-2 border-gray-200">
+            ₹4000.00
+            <span class="line-through text-gray-400 text-sm">₹4200.00</span>
+          </div>
+          <div class="relative py-2">
+            <a href="#" class="text-center"
+              ><p
+                class="after:content-[''] after:w-10 after:absolute after:bottom-0 after:h-1 after:bg-gray-600 after:left-1/2 after:-translate-x-1/2 after:transition-all after:duration-500 after:rounded-lg hover:after:w-32 hover:after:bg-red-500 hover:text-red-500 text-gray-600 text-base"
+              >
+                Add To Cart
+              </p></a
+            >
+          </div>
+          <div
+            class="cart-icon absolute bottom-36 text-center w-full opacity-0 group-hover:animate-carticon group-hover:opacity-100"
+          >
+            <span class="full-rounded-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-4 h-4"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z"
+                />
+              </svg>
+            </span>
+            <span class="full-rounded-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-4 h-4"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"
+                />
+              </svg>
+            </span>
+            <span class="full-rounded-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-4 h-4"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M19.5 12c0-1.232-.046-2.453-.138-3.662a4.006 4.006 0 00-3.7-3.7 48.678 48.678 0 00-7.324 0 4.006 4.006 0 00-3.7 3.7c-.017.22-.032.441-.046.662M19.5 12l3-3m-3 3l-3-3m-12 3c0 1.232.046 2.453.138 3.662a4.006 4.006 0 003.7 3.7 48.656 48.656 0 007.324 0 4.006 4.006 0 003.7-3.7c.017-.22.032-.441.046-.662M4.5 12l3 3m-3-3l-3 3"
+                ></path>
+              </svg>
+            </span>
+            <span class="full-rounded-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-4 h-4"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z"
+                />
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+                />
+              </svg>
+            </span>
+          </div>
+        </div>
+
+        <div class="TopNew cart-item text-center relative group cursor-pointer hidden">
+          <div class="px-2 py-4">
+            <img src="Image/product_image8.jfif" alt="" />
+          </div>
+          <div class="px-12 pt-2 text-lg text-gray-600 font-semibold">
+            Yellow Rayon Kurta palazzo Set
+          </div>
+          <div class="mx-6 py-2 text-red-500 border-b-2 border-gray-200">
+            ₹4000.00
+            <span class="line-through text-gray-400 text-sm">₹4200.00</span>
+          </div>
+          <div class="relative py-2">
+            <a href="#" class="text-center"
+              ><p
+                class="after:content-[''] after:w-10 after:absolute after:bottom-0 after:h-1 after:bg-gray-600 after:left-1/2 after:-translate-x-1/2 after:transition-all after:duration-500 after:rounded-lg hover:after:w-32 hover:after:bg-red-500 hover:text-red-500 text-gray-600 text-base"
+              >
+                Add To Cart
+              </p></a
+            >
+          </div>
+          <div
+            class="cart-icon absolute bottom-36 text-center w-full opacity-0 group-hover:animate-carticon group-hover:opacity-100"
+          >
+            <span class="full-rounded-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-4 h-4"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z"
+                />
+              </svg>
+            </span>
+            <span class="full-rounded-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-4 h-4"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"
+                />
+              </svg>
+            </span>
+            <span class="full-rounded-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-4 h-4"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M19.5 12c0-1.232-.046-2.453-.138-3.662a4.006 4.006 0 00-3.7-3.7 48.678 48.678 0 00-7.324 0 4.006 4.006 0 00-3.7 3.7c-.017.22-.032.441-.046.662M19.5 12l3-3m-3 3l-3-3m-12 3c0 1.232.046 2.453.138 3.662a4.006 4.006 0 003.7 3.7 48.656 48.656 0 007.324 0 4.006 4.006 0 003.7-3.7c.017-.22.032-.441.046-.662M4.5 12l3 3m-3-3l-3 3"
+                ></path>
+              </svg>
+            </span>
+            <span class="full-rounded-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-4 h-4"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z"
+                />
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+                />
+              </svg>
+            </span>
+          </div>
+        </div>
+
+      </div>
+      
+
+      <div class="text-center">
+        <button class="btn mx-auto">Shop Now</button>
+      </div>
+    </section>
+
+    <!-- Trendy Collection -->
+
+    <section
+      class="container mx-auto mt-24 mb-20 pb-24 overflow-hidden hidden"
+      id="trandy-collection-section"
+    >
+      <div class="flex justify-between items-center">
+        <h1 class="text-gray-600 text-4xl pt-4 pb-8">Trendy Collection</h1>
+        <div class="flex gap-4" id="TrendyCollection"></div>
+      </div>
+      <div
+        class="owl-carousel owl-theme flex flex-row overflow-auto -mb-5 pb-8"
+        id="ItemCarouselTwo"
+      >
+        <div
+          class="item cart-item text-center relative group cursor-pointer w-96"
+        >
+          <div class="px-2 py-4">
+            <img src="Image/product_image8.jfif" alt="" />
+          </div>
+          <div class="px-12 pt-2 text-lg text-gray-600 font-semibold">
+            Yellow Rayon Kurta palazzo Set
+          </div>
+          <div class="mx-6 py-2 text-red-500 border-b-2 border-gray-200">
+            ₹4000.00
+            <span class="line-through text-gray-400 text-sm">₹4200.00</span>
+          </div>
+          <div class="relative py-2">
+            <a href="#" class="text-center"
+              ><p
+                class="after:content-[''] after:w-10 after:absolute after:bottom-0 after:h-1 after:bg-gray-600 after:left-1/2 after:-translate-x-1/2 after:transition-all after:duration-500 after:rounded-lg hover:after:w-32 hover:after:bg-red-500 hover:text-red-500 text-gray-600 text-base"
+              >
+                Add To Cart
+              </p></a
+            >
+          </div>
+          <div
+            class="cart-icon absolute bottom-36 text-center w-full opacity-0 group-hover:animate-carticon group-hover:opacity-100"
+          >
+            <span class="full-rounded-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-4 h-4"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z"
+                />
+              </svg>
+            </span>
+            <span class="full-rounded-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-4 h-4"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"
+                />
+              </svg>
+            </span>
+            <span class="full-rounded-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-4 h-4"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M19.5 12c0-1.232-.046-2.453-.138-3.662a4.006 4.006 0 00-3.7-3.7 48.678 48.678 0 00-7.324 0 4.006 4.006 0 00-3.7 3.7c-.017.22-.032.441-.046.662M19.5 12l3-3m-3 3l-3-3m-12 3c0 1.232.046 2.453.138 3.662a4.006 4.006 0 003.7 3.7 48.656 48.656 0 007.324 0 4.006 4.006 0 003.7-3.7c.017-.22.032-.441.046-.662M4.5 12l3 3m-3-3l-3 3"
+                ></path>
+              </svg>
+            </span>
+            <span class="full-rounded-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-4 h-4"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z"
+                />
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+                />
+              </svg>
+            </span>
+          </div>
+          <div
+            class="absolute top-0 right-0 bg-gray-700 text-white px-4 py-2 rounded-tl-2xl rounded-br-2xl"
+          >
+            New
+          </div>
+        </div>
+
+        <div
+          class="item cart-item text-center relative group cursor-pointer w-96"
+        >
+          <div class="px-2 py-4">
+            <img src="Image/product_image9.jfif" alt="" />
+          </div>
+          <div class="px-12 pt-2 text-lg text-gray-600 font-semibold">
+            Yellow Rayon Kurta palazzo Set
+          </div>
+          <div class="mx-6 py-2 text-red-500 border-b-2 border-gray-200">
+            ₹4000.00
+            <span class="line-through text-gray-400 text-sm">₹4200.00</span>
+          </div>
+          <div class="relative py-2">
+            <a href="#" class="text-center"
+              ><p
+                class="after:content-[''] after:w-10 after:absolute after:bottom-0 after:h-1 after:bg-gray-600 after:left-1/2 after:-translate-x-1/2 after:transition-all after:duration-500 after:rounded-lg hover:after:w-32 hover:after:bg-red-500 hover:text-red-500 text-gray-600 text-base"
+              >
+                Add To Cart
+              </p></a
+            >
+          </div>
+          <div
+            class="cart-icon absolute bottom-36 text-center w-full opacity-0 group-hover:animate-carticon group-hover:opacity-100"
+          >
+            <span class="full-rounded-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-4 h-4"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z"
+                />
+              </svg>
+            </span>
+            <span class="full-rounded-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-4 h-4"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"
+                />
+              </svg>
+            </span>
+            <span class="full-rounded-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-4 h-4"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M19.5 12c0-1.232-.046-2.453-.138-3.662a4.006 4.006 0 00-3.7-3.7 48.678 48.678 0 00-7.324 0 4.006 4.006 0 00-3.7 3.7c-.017.22-.032.441-.046.662M19.5 12l3-3m-3 3l-3-3m-12 3c0 1.232.046 2.453.138 3.662a4.006 4.006 0 003.7 3.7 48.656 48.656 0 007.324 0 4.006 4.006 0 003.7-3.7c.017-.22.032-.441.046-.662M4.5 12l3 3m-3-3l-3 3"
+                ></path>
+              </svg>
+            </span>
+            <span class="full-rounded-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-4 h-4"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z"
+                />
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+                />
+              </svg>
+            </span>
+          </div>
+        </div>
+
+        <div
+          class="item cart-item text-center relative group cursor-pointer w-96"
+        >
+          <div class="px-2 py-4">
+            <img src="Image/product_image10.jfif" alt="" />
+          </div>
+          <div class="px-12 pt-2 text-lg text-gray-600 font-semibold">
+            Yellow Rayon Kurta palazzo Set
+          </div>
+          <div class="mx-6 py-2 text-red-500 border-b-2 border-gray-200">
+            ₹4000.00
+            <span class="line-through text-gray-400 text-sm">₹4200.00</span>
+          </div>
+          <div class="relative py-2">
+            <a href="#" class="text-center"
+              ><p
+                class="after:content-[''] after:w-10 after:absolute after:bottom-0 after:h-1 after:bg-gray-600 after:left-1/2 after:-translate-x-1/2 after:transition-all after:duration-500 after:rounded-lg hover:after:w-32 hover:after:bg-red-500 hover:text-red-500 text-gray-600 text-base"
+              >
+                Add To Cart
+              </p></a
+            >
+          </div>
+          <div
+            class="cart-icon absolute bottom-36 text-center w-full opacity-0 group-hover:animate-carticon group-hover:opacity-100"
+          >
+            <span class="full-rounded-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-4 h-4"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z"
+                />
+              </svg>
+            </span>
+            <span class="full-rounded-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-4 h-4"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"
+                />
+              </svg>
+            </span>
+            <span class="full-rounded-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-4 h-4"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M19.5 12c0-1.232-.046-2.453-.138-3.662a4.006 4.006 0 00-3.7-3.7 48.678 48.678 0 00-7.324 0 4.006 4.006 0 00-3.7 3.7c-.017.22-.032.441-.046.662M19.5 12l3-3m-3 3l-3-3m-12 3c0 1.232.046 2.453.138 3.662a4.006 4.006 0 003.7 3.7 48.656 48.656 0 007.324 0 4.006 4.006 0 003.7-3.7c.017-.22.032-.441.046-.662M4.5 12l3 3m-3-3l-3 3"
+                ></path>
+              </svg>
+            </span>
+            <span class="full-rounded-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-4 h-4"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z"
+                />
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+                />
+              </svg>
+            </span>
+          </div>
+          <div
+            class="absolute top-0 right-0 bg-gray-700 text-white px-4 py-2 rounded-tl-2xl rounded-br-2xl"
+          >
+            New
+          </div>
+        </div>
+
+        <div
+          class="item cart-item text-center relative group cursor-pointer w-96"
+        >
+          <div class="px-2 py-4">
+            <img src="Image/product_image11.jpeg" alt="" />
+          </div>
+          <div class="px-12 pt-2 text-lg text-gray-600 font-semibold">
+            Yellow Rayon Kurta palazzo Set
+          </div>
+          <div class="mx-6 py-2 text-red-500 border-b-2 border-gray-200">
+            ₹4000.00
+            <span class="line-through text-gray-400 text-sm">₹4200.00</span>
+          </div>
+          <div class="relative py-2">
+            <a href="#" class="text-center"
+              ><p
+                class="after:content-[''] after:w-10 after:absolute after:bottom-0 after:h-1 after:bg-gray-600 after:left-1/2 after:-translate-x-1/2 after:transition-all after:duration-500 after:rounded-lg hover:after:w-32 hover:after:bg-red-500 hover:text-red-500 text-gray-600 text-base"
+              >
+                Add To Cart
+              </p></a
+            >
+          </div>
+          <div
+            class="cart-icon absolute bottom-36 text-center w-full opacity-0 group-hover:animate-carticon group-hover:opacity-100"
+          >
+            <span class="full-rounded-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-4 h-4"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z"
+                />
+              </svg>
+            </span>
+            <span class="full-rounded-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-4 h-4"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"
+                />
+              </svg>
+            </span>
+            <span class="full-rounded-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-4 h-4"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M19.5 12c0-1.232-.046-2.453-.138-3.662a4.006 4.006 0 00-3.7-3.7 48.678 48.678 0 00-7.324 0 4.006 4.006 0 00-3.7 3.7c-.017.22-.032.441-.046.662M19.5 12l3-3m-3 3l-3-3m-12 3c0 1.232.046 2.453.138 3.662a4.006 4.006 0 003.7 3.7 48.656 48.656 0 007.324 0 4.006 4.006 0 003.7-3.7c.017-.22.032-.441.046-.662M4.5 12l3 3m-3-3l-3 3"
+                ></path>
+              </svg>
+            </span>
+            <span class="full-rounded-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-4 h-4"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z"
+                />
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+                />
+              </svg>
+            </span>
+          </div>
+        </div>
+
+        <div
+          class="item cart-item text-center relative group cursor-pointer w-96"
+        >
+          <div class="px-2 py-4">
+            <img src="Image/product_image12.jpeg" alt="" />
+          </div>
+          <div class="px-12 pt-2 text-lg text-gray-600 font-semibold">
+            Yellow Rayon Kurta palazzo Set
+          </div>
+          <div class="mx-6 py-2 text-red-500 border-b-2 border-gray-200">
+            ₹4000.00
+            <span class="line-through text-gray-400 text-sm">₹4200.00</span>
+          </div>
+          <div class="relative py-2">
+            <a href="#" class="text-center"
+              ><p
+                class="after:content-[''] after:w-10 after:absolute after:bottom-0 after:h-1 after:bg-gray-600 after:left-1/2 after:-translate-x-1/2 after:transition-all after:duration-500 after:rounded-lg hover:after:w-32 hover:after:bg-red-500 hover:text-red-500 text-gray-600 text-base"
+              >
+                Add To Cart
+              </p></a
+            >
+          </div>
+          <div
+            class="cart-icon absolute bottom-36 text-center w-full opacity-0 group-hover:animate-carticon group-hover:opacity-100"
+          >
+            <span class="full-rounded-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-4 h-4"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z"
+                />
+              </svg>
+            </span>
+            <span class="full-rounded-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-4 h-4"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"
+                />
+              </svg>
+            </span>
+            <span class="full-rounded-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-4 h-4"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M19.5 12c0-1.232-.046-2.453-.138-3.662a4.006 4.006 0 00-3.7-3.7 48.678 48.678 0 00-7.324 0 4.006 4.006 0 00-3.7 3.7c-.017.22-.032.441-.046.662M19.5 12l3-3m-3 3l-3-3m-12 3c0 1.232.046 2.453.138 3.662a4.006 4.006 0 003.7 3.7 48.656 48.656 0 007.324 0 4.006 4.006 0 003.7-3.7c.017-.22.032-.441.046-.662M4.5 12l3 3m-3-3l-3 3"
+                ></path>
+              </svg>
+            </span>
+            <span class="full-rounded-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-4 h-4"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z"
+                />
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+                />
+              </svg>
+            </span>
+          </div>
+          <div
+            class="absolute top-0 right-0 bg-gray-700 text-white px-4 py-2 rounded-tl-2xl rounded-br-2xl"
+          >
+            New
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Feel Ethentic -->
+    <section
+      class="container mx-auto my-24 flex justify-between gap-3 hidden"
+      id="feel-ethentic-section"
+    >
+      <div class="flex items-center w-2/3 mt-24 p-8 bg-gunjain-main">
+        <div class="w-1/2">
+          <img src="Image/FEEL_ETHNIC.png" alt="" />
+        </div>
+        <div class="w-1/2 text-center">
+          <h1 class="text-5xl p-4 font-semibold text-red-500">
+            FEEL ETHNIC <br />
+            WEAR ETHNIC
+          </h1>
+          <button
+            class="btn hover:bg-black hover:text-white hover:border-black"
+          >
+            Shop Now
+          </button>
+        </div>
+      </div>
+      <div class="">
+        <img src="Image/FEEL_ETHNIC2.png" alt="" />
+      </div>
+    </section>
+
+    <!-- Service Details -->
+
+    <section
+      class="container mx-auto my-28 hidden"
+      id="service-details-section"
+    >
+      <div class="flex gap-4 justify-center items-center">
+        <div
+          class="service_details flex gap-5 justify-center items-center w-1/5 h-24 border-2 border-gray-200 pl-1"
+        >
+          <img class="w-12" src="gunjan_image/Free_delivary.png" />
+          <h2 class="text-2xl text-gray-700">Free Shipping</h2>
+        </div>
+
+        <div
+          class="service_details flex gap-5 justify-center items-center w-1/5 h-24 border-2 border-gray-200 pl-1"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-12 h-12 stroke-red-400"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M9 15L3 9m0 0l6-6M3 9h12a6 6 0 010 12h-3"
+            />
+          </svg>
+
+          <h2 class="text-2xl text-gray-700">Easy Return</h2>
+        </div>
+
+        <div
+          class="service_details flex gap-5 justify-center items-center w-1/5 h-24 border-2 border-gray-200 pl-1"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-12 h-12 stroke-red-400"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M16.5 10.5V6.75a4.5 4.5 0 10-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H6.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z"
+            />
+          </svg>
+
+          <h2 class="text-2xl text-gray-700">Secure Payment</h2>
+        </div>
+
+        <div
+          class="service_details flex gap-5 justify-center items-center w-1/5 h-24 border-2 border-gray-200 pl-1"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-12 h-12 stroke-red-400"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M21 11.25v8.25a1.5 1.5 0 01-1.5 1.5H5.25a1.5 1.5 0 01-1.5-1.5v-8.25M12 4.875A2.625 2.625 0 109.375 7.5H12m0-2.625V7.5m0-2.625A2.625 2.625 0 1114.625 7.5H12m0 0V21m-8.625-9.75h18c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125h-18c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125z"
+            />
+          </svg>
+
+          <h2 class="text-2xl text-gray-700">Best Offer</h2>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+
+    <footer class="bg-gray-100 hidden" id="footer-section">
+      <section class="container mx-auto py-14 flex Footer-sections">
+        <div class="Footer-tab">
+          <h2 class="text-2xl text-gray-600 pb-3">QUICK LINKS</h2>
+          <ul class="footer-Links-arrow footer-Links">
+            <a href=""><li>Home</li></a>
+            <a href=""><li>Size Chart</li></a>
+            <a href=""><li>Shipping Policy</li></a>
+            <a href=""><li>Garments Care</li></a>
+            <a href=""><li>Return Policy</li></a>
+            <a href=""><li>Refund Policy</li></a>
+          </ul>
+        </div>
+        <div class="Footer-tab">
+          <h2 class="text-2xl text-gray-600 pb-3">HELPFUL LINKS</h2>
+          <ul class="footer-Links-arrow footer-Links">
+            <a href=""><li>Home</li></a>
+            <a href=""><li>Product</li></a>
+            <a href=""><li>Contact</li></a>
+          </ul>
+        </div>
+        <div class="Footer-tab">
+          <h2 class="text-2xl text-gray-600 pb-3">STORE INFO</h2>
+          <ul class="footer-Links Footer-Contact_info">
+            <a href=""
+              ><li>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-4 h-4 stroke-red-400"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"
+                  />
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"
+                  />
+                </svg>
+
+                Udaynagar(TantiPara), Chakdaha, Nadia, 741222
+              </li></a
+            >
+            <a href=""
+              ><li>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-4 h-4 stroke-red-400"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M10.5 1.5H8.25A2.25 2.25 0 006 3.75v16.5a2.25 2.25 0 002.25 2.25h7.5A2.25 2.25 0 0018 20.25V3.75a2.25 2.25 0 00-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3"
+                  />
+                </svg>
+
+                +919875575852
+              </li></a
+            >
+            <a href=""
+              ><li>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-4 h-4 stroke-red-400"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"
+                  />
+                </svg>
+
+                rakeshpaul248@gmail.com
+              </li></a
+            >
+          </ul>
+        </div>
+        <div class="Footer-tab">
+          <h2 class="text-2xl text-gray-600 pb-3">HELPFUL LINKS</h2>
+          <p class="text-base text-gray-500">Lorem ipsum dolor sit amet.</p>
+          <div class="Footer-Input-form flex bg-gray-200 mt-4">
+            <input
+              type="email"
+              placeholder="Your mail here"
+              class="w-full py-3 px-3 bg-gray-200 focus:outline-none focus:border-2 focus:border-red-300 focus:rounded-md"
+            />
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-14 h-14 btn"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M6 12L3.269 3.126A59.768 59.768 0 0121.485 12 59.77 59.77 0 013.27 20.876L5.999 12zm0 0h7.5"
+              />
+            </svg>
+          </div>
+        </div>
+      </section>
+      <div
+        class="copy-right text-center py-7 border-t-2 border-gray-200 text-gray-400"
+      >
+        © 2023 All right reserved by rakesh for learn
+      </div>
+    </footer>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
+      integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="app.js"></script>
+  </body>
+</html>
